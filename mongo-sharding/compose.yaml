@@ -1,3 +1,4 @@
+name: mongo-sharding
 services:
   configSrv:
     image: dh-mirror.gitverse.ru/mongo:latest
@@ -70,7 +71,7 @@ services:
         "27019"
       ]
     healthcheck:
-      test: [ "CMD", "mongo", "--eval", "db.adminCommand('ping')" ]
+      test: [ "CMD", "mongosh", "--eval", "db.adminCommand('ping')" ]
       interval: 5s
       start_period: 10s
   
