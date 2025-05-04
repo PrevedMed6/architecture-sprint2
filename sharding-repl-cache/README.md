@@ -2,19 +2,13 @@
 
 ## Как запустить
 
-Перейти в каталог sharding-repl-cache
-
-```shell
-cd .\sharding-repl-cache\
-```
-
-Запустить mongodb в режиме шардирования и репликации, reddis и приложение
+Запустить mongodb в режиме шардирования и репликации и приложение
 
 ```shell
 docker compose up -d
 ```
 
-Инициализировать mongodb с шардированием и репликацией и заполнить данными
+Заполняем инициализируем mongodb с шардированием и репликацией и заполняем данными
 
 ```shell
 ./scripts/mongo-init.sh
@@ -33,8 +27,4 @@ docker compose up -d
 
 ## Доступные эндпоинты
 
-Список доступных эндпоинтов, swagger http://localhost:8080/docs
-
-## Схемы по заданию
-
-[Здесь](https://drive.google.com/file/d/10aabCoBvxNod4RT49UngOWWJgXRTZv_i/view?usp=sharing)
+Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
