@@ -144,7 +144,7 @@ services:
       interval: 5s
       start_period: 10s
 
-  # Mongos routers
+  # Mongos router
   mongos_router:
     image: dh-mirror.gitverse.ru/mongo:latest
     container_name: mongos_router
